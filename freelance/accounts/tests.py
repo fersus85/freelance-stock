@@ -3,10 +3,11 @@ from django.contrib.auth import get_user_model
 
 
 class CustomUserTests(TestCase):
-    user_model = get_user_model()
+    def setUp(self):
+        self.user = get_user_model()
 
     def test_create_user(self):
-        user = self.user_model.objects.create_user(
+        user = self.user.objects.create_user(
             username='john',
             email='john@mail.ru',
             password='testpass123'
@@ -18,7 +19,7 @@ class CustomUserTests(TestCase):
         self.assertFalse(user.is_superuser)
 
     def test_create_superuser(self):
-        admin_user = self.user_model.objects.create_superuser(
+        admin_user = self.user.objects.create_superuser(
             username='superadmin',
             email='superadmin@mail.ru',
             password='testpass123'
