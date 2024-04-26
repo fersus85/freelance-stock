@@ -3,13 +3,4 @@
 {% block title %}KworkClone Home{% endblock title %}
 {% block content %}
     <h1>Homepage</h1>
-    {% if user.is_authenticated %}
-        <p> Hi, {{ user.email }}</p>
-        <p> {{ user.is_freelancer }}
-        <p><a href="{% url 'logout' %}">Log Out</a></p>
-    {% else %}
-        <p> Not logged in </p>
-        <a href="{% url 'login' %}"> Login </a>
-        <p><a href="{% url 'signup' %}">Registration</a></p>
-    {% endif %}
 {% endblock content %}

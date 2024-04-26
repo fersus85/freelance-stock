@@ -2,7 +2,7 @@ from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.urls import reverse, resolve
 
-from .views import RegistrationPageView
+from .views import SignupPageView
 
 
 class CustomUserTests(TestCase):
@@ -47,4 +47,4 @@ class SignupPageTests(TestCase):
     def test_signup_view(self):
         view = resolve('/accounts/signup/')
         self.assertEqual(view.func.__name__,
-                         RegistrationPageView.as_view().__name__)
+                         SignupPageView.as_view().__name__)

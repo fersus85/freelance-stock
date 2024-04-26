@@ -6,7 +6,7 @@ from django.core.exceptions import ValidationError
 class CustomUserCreationForm(UserCreationForm):
     class Meta:
         model = get_user_model()
-        fields = ('email', 'first_name', 'last_name', 'experience')
+        fields = ('email', 'is_freelancer', 'first_name', 'last_name')
 
     def clean_email(self):
         email = self.cleaned_data['email']

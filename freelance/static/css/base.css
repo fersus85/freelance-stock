@@ -1,0 +1,16 @@
+/* static/css/base.css */
+h1 {
+    color: rgb(190, 156, 19);
+    text-align: center;
+   }
+body {
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+}
+h2 {
+    color: blanchedalmond;
+    text-align: center;
+}
+label {
+    color: chocolate;
+}
