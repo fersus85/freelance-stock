@@ -1,0 +1,20 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<h1> Профиль </h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if user.photo %}
+    <p><img src={{ user.photo.url }} height=200>
+    {% else %}
+    <p><img src="/media/accounts/default.png">
+    {% endif %}
+    {{ form|crispy }}
+    <p></p>    
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+
+{% endblock content %}
+

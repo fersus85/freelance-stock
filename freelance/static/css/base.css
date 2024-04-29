@@ -1,6 +1,6 @@
 /* static/css/base.css */
 h1 {
-    color: rgb(190, 156, 19);
+    color: rgb(245, 181, 52);
     text-align: center;
    }
 body {
@@ -8,9 +8,15 @@ body {
     background-size: cover;
 }
 h2 {
-    color: blanchedalmond;
+    color: rgb(245, 181, 52);
     text-align: center;
 }
 label {
-    color: chocolate;
+    color: rgb(245, 181, 52);
+}
+.payer-banner {
+    color: rgb(245, 181, 52);
+}
+.form-control {
+    max-width: 481px;
 }
