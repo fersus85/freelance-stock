@@ -19,3 +19,11 @@ class UserProfile(LoginRequiredMixin, generic.UpdateView):
 
     def get_success_url(self) -> str:
         return reverse_lazy('profile', args=[self.request.user.pk])
+
+
+class FreelanOfficeView(LoginRequiredMixin, generic.TemplateView):
+    template_name = 'freelance_office.html'
+
+
+class CustomerOfficeView(LoginRequiredMixin, generic.TemplateView):
+    template_name = 'customer_office.html'

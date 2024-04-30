@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+{% block content %}
+
+<h1> Личный кабинет </h1>
+{% if user.photo %}
+    <p><img src={{ user.photo.url }} height=200>
+{% else %}
+    <p><img src="/media/accounts/default.png">
+{% endif %}
+<div class="free" width=auto>
+<h2> Customer </h2>
+<p>{{ user.first_name}} {{ user.last_name}}
+<p>{{ user.date_joined }}
+
+</div>
+{% endblock content %}
