@@ -29,15 +29,16 @@
     cd freelance-stock
     ```
 3. Запустите docker-compose:
-  ```bash
+    ```bash
     docker compose up --build -d
-  ```
-4. Создайте superuser:
-  ```bash
+   ```
+4. Запустите тесты:
+   ```bash
+   docker-compose exec web python freelance/manage.py test
+   ```
+5. Создайте superuser:
+    ```bash
     docker-compose exec web python freelance/manage.py createsuperuser
-  ```
+    ```
 
-5. Откройте в браузере адрес:
-    '''bash
-    127.0.0.1:8000
-    '''
+6. Откройте в браузере адрес: 127.0.0.1:8000
