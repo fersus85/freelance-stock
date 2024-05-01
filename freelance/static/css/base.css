@@ -33,3 +33,18 @@ label {
     border-radius: 40%;
     object-position: right;
 }
+.results {
+    color: black;
+    width: 11em;
+    border: 1px solid #333;
+    
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+.about {
+    color: black;
+    width: 20em;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}

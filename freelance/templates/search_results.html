@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+{% block title %}Поиск{% endblock title %}
+{% block content %}
+<h1 style="text-align: left;">Результаты поиска</h1>
+{% if results %}
+    {% for freelancer in results  %}
+    <div class='results'>
+    <h3>{{ freelancer.email }}</h3>
+    <p>Имя: {{ freelancer.first_name }} {{ freelancer.last_name }}</p>
+    <p>Навыки: {{ freelancer.experience}}</p>
+    </div>
+    {% endfor %}
+{% else %}
+    <h3 style="color: white;">Поиск был безрезультатным</h3>
+{% endif %}
+{% endblock content %}

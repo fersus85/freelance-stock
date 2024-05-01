@@ -2,22 +2,16 @@
 {% extends '_base.html' %}
 {% block title %}KworkClone Home{% endblock title %}
 {% block content %}
-    <div class="kw-wrapper">
-        <h1 class="kw-header--h1 t-align-c mb0">CKW – fakeмаркетплейс <br>фриланс-услуг</h1>
-         <div class="payer-banner">Экономьте время, деньги и нервы</div>
-          <div class="mb-3">
-            <div class="mb-3">
-            <input name="" type="text" placeholder="Создать сайт на Django" autocomplete="off" spellcheck="false" class="form-control"> 
-            <p></p>
-            <span class="search-button"><button class="btn btn-warning">Найти</button></span>
-             <div class="dropdown dropdown-suggestions" style="display: none;">
-                <div class="history d-flex justify-content-between">
-                    <div class="history__title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
-                        <g clip-path="url(#history-time)"><path d="M11.43 1.25c-4.733 0-8.57 3.838-8.57 8.57H0l3.705 3.705.067.133L7.62 9.82H4.762c0-3.686 2.98-6.667 6.667-6.667s6.667 2.98 6.667 6.667-2.98 6.667-6.667 6.667c-1.838 0-3.505-.752-4.705-1.962L5.37 15.88c1.552 1.552 3.686 2.514 6.057 2.514 4.733 0 8.57-3.838 8.57-8.57s-3.838-8.57-8.57-8.57zm-.952 4.762v4.762l4.076 2.42.686-1.152-3.333-1.98V6.012h-1.43z" fill="#a5a5a5"></path></g>
-                        <defs><clipPath id="history-time"><path fill="#fff" d="M0 0h20v20H0z"></path></clipPath></defs></svg>
-        Недавний поиск
-    </div> <div class="history__button-clear">
-        Очистить
-    </div></div> <!----> 
-     </div></div> </div></div>
+    <div class="">
+        <h1 class="" style="text-align: left;">fakeмаркетплейс фриланс-услуг</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="get">
+        <input name="q" class="form-control mr-sm-2" type="text"
+            placeholder="Ключевой навык или имя" aria-label="Поиск">
+            
+            <button class="btn btn-warning" type="submit">Найти</button>
+    </form>
 {% endblock content %}
