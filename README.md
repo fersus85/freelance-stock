@@ -22,7 +22,7 @@
 ## Запуск приложения локально с помощью Docker
 1. Клонируйте репозиторий:
     ```bash
-    git clone git@github.com:fersus85/freelance-stock.git
+    git clone https://github.com/fersus85/freelance-stock.git
     ```
 2. Перейдите в директорию проекта:
     ```bash
